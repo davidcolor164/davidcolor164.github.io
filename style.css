@@ -1,1 +1,124 @@
-*{margin: 0; padding: 0;} 
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=vietnamese');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body,html{
+	font-size: 13px;
+	font-family: 'Cabin', sans-serif;
+	color: #888888;
+}
+/* global style */
+a:hover{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.btn{
+	border: none;
+	border-radius: 0;
+	text-align: left;
+	outline: none;
+	padding: 10px;
+}
+.btn:focus{	
+	box-shadow: none;
+}
+/* style header-top */
+.header-top{
+	padding: 50px 0;
+	border-bottom: 1px solid #ebebeb;
+}
+.header-top span{
+	text-transform: uppercase;
+	margin-right: 15px;
+	font-size: 12px;
+}
+.header-top span i{
+	margin-right: 5px;
+}
+.header-top span i.fa-chevron-down{
+	margin-right: 0px;
+	margin-left: 5px;
+}
+.search{
+	border: 1px solid #888888;
+	padding: 0 10px;
+}
+.search i{
+	cursor: pointer;
+}
+/* style nav */
+.navbar .navbar-nav  .nav-item {
+	margin: 0 10px;	
+	position: relative;
+}
+.navbar .navbar-nav  .nav-link{
+	border-right: 1px solid #ebebeb;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #444444;
+	font-family: 'Open Sans', sans-serif;
+}
+.navbar .navbar-nav  .nav-link:hover{
+	color: #555555;
+}
+.navbar .navbar-nav  .nav-link i{
+	margin-left: 5px;
+}
+.navbar .navbar-nav  .nav-item ul{
+	position: absolute;
+	left: -10px;
+	width: 150px;
+	display: block;
+	opacity: 0;
+	visibility: hidden;
+}
+.navbar .navbar-nav  .nav-item.open ul{
+	opacity: 1;
+	visibility: visible;
+	transition: .6s;
+}
+.navbar .navbar-nav  .nav-item ul li{
+	padding: 5px 10px;
+	display: block;
+	width: 200px;
+	background: red;
+}
+.navbar .navbar-nav  .nav-item ul li a{
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #555555;
+	font-family: 'Open Sans', sans-serif;
+}
+.navbar .navbar-nav  .nav-item ul li a:hover{
+	color: #9b9b9b;
+}
+
+@media (max-width: 992px)
+{
+	.header-top{
+		flex-direction: column;
+		padding: 30px;
+	}
+	.navbar .navbar-nav  .nav-item{
+		display: block;
+		text-align: center;
+	}
+	.navbar .navbar-nav  ul li ul{
+		position: relative;
+	}
+	.navbar .navbar-nav  .nav-item ul li{
+		width: 100%;
+	}
+	.navbar .navbar-nav .nav-item ul {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+}
+}

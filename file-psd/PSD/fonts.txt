@@ -1,0 +1,3 @@
+Poppins (Heading) - https://www.google.com/fonts/specimen/Poppins
+Cabin (Content Text) - https://www.google.com/fonts/specimen/Cabin
+Font Awesome (Icons)   -   http://fortawesome.github.io/Font-Awesome/

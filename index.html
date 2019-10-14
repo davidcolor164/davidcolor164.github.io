@@ -3,15 +3,73 @@
 	<title> WNstore Website </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">  
-	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+	<script type="text/javascript" src="bootstrap/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/popper.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
  	<script type="text/javascript" src="main.js"></script>
-	<link rel="stylesheet" href="vendor/bootstrap.css">
-	<link rel="stylesheet" href="vendor/font-awesome.css">
+	<link rel="stylesheet" href="fonts/css/all.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
  	<link rel="stylesheet" href="style.css">
 </head>
 <body >
- <h2>Pham Thanh Tam</h2>
- <p>Sdt: 0234234234</p>
- <span>Address: HCM1asdas23</span>
+	<header>
+		<div class="container">
+			<div class="header-top d-flex justify-content-between align-items-center" >
+				<div class="header-left">
+					<span><i class="fas fa-sign-in-alt"></i>Register</span>
+					<span>My account<i class="fas fa-chevron-down"></i></span>
+					<span><i class="fas fa-cart-plus"></i>5 Items</span>
+				</div>
+				<a href="#" class="logo"><img src="images/logo.png"></a>
+				<div class="header-right d-flex align-items-center">
+					<span class="lang">EN<i class="fas fa-chevron-down"></i></span>					
+					<div class="search">
+						<input type="text" name="" class="btn btn-search" placeholder="Search..."><i class="fas fa-search"></i>	
+					</div>		
+				</div>
+			</div><!-- End header-top -->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" >
+				    <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav  m-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Home</a>							
+						</li>
+						<li class="nav-item open" >
+							<a href="#" class="nav-link">Shop<i class="fas fa-chevron-down"></i></a>
+							<ul>
+								<li ><a href="#">Home Page</a></li>
+								<li ><a href="#">Page 1</a></li>
+								<li ><a href="#">Page 2</a></li>
+							</ul>				
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Portfolio</a>					
+						</li>
+						<li class="nav-item" >
+							<a href="#" class="nav-link">Pages<i class="fas fa-chevron-down"></i></a>
+							<ul>
+								<li ><a href="#">Page 5</a></li>
+								<li ><a href="#">Page 3</a></li>
+								<li ><a href="#">Page 4</a></li>
+							</ul>				
+						</li>
+						<li class="nav-item">
+								<a href="#" class="nav-link">Blog</a>						
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Contact</a>					
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
 </body>
 </html>
+
+
+							
+							
