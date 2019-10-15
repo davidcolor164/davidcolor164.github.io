@@ -10,6 +10,12 @@ body,html{
 	color: #888888;
 }
 /* global style */
+h1,h2, h3, h4{
+	font-family: 'Open Sans', sans-serif;
+}
+img{
+	width: 100%
+}
 a:hover{
 	text-decoration: none;
 }
@@ -22,9 +28,19 @@ ul{
 	text-align: left;
 	outline: none;
 	padding: 10px;
+	transition: .6s;
 }
 .btn:focus{	
 	box-shadow: none;
+}
+.btn-shop{
+	border: 1px solid #fff;
+	padding: 7px 15px;
+	color: #fff;
+}
+.btn-shop:hover{
+	color: #000;
+	background: #fff;
 }
 /* style header-top */
 .header-top{
@@ -52,11 +68,11 @@ ul{
 }
 /* style nav */
 .navbar .navbar-nav  .nav-item {
-	margin: 0 10px;	
+	padding: 0 10px;	
+	border-right: 1px solid #ebebeb;
 	position: relative;
 }
 .navbar .navbar-nav  .nav-link{
-	border-right: 1px solid #ebebeb;
 	font-size: 14px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -68,25 +84,25 @@ ul{
 }
 .navbar .navbar-nav  .nav-link i{
 	margin-left: 5px;
+	font-size: 10px;
 }
-.navbar .navbar-nav  .nav-item ul{
+.navbar .navbar-nav .nav-item ul{
 	position: absolute;
-	left: -10px;
+	left: 0px;
 	width: 150px;
-	display: block;
 	opacity: 0;
 	visibility: hidden;
+	margin-top: 50px;
 }
 .navbar .navbar-nav  .nav-item.open ul{
 	opacity: 1;
 	visibility: visible;
+	margin-top: 0;
 	transition: .6s;
 }
 .navbar .navbar-nav  .nav-item ul li{
 	padding: 5px 10px;
-	display: block;
 	width: 200px;
-	background: red;
 }
 .navbar .navbar-nav  .nav-item ul li a{
 	font-size: 14px;
@@ -98,27 +114,96 @@ ul{
 .navbar .navbar-nav  .nav-item ul li a:hover{
 	color: #9b9b9b;
 }
+/* Slide Style */
+.slide{
+	position: relative;
+}
+.slide .slide-content{
+	position: absolute;
+	top: 40%;
+	left: 40% ;
+	text-align: center;
+	color: #fff;
+}
+.slide  img{
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+}
+.slide .slide-content h2{
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.slide .slide-content p{
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
 
-@media (max-width: 992px)
+.carousel-control-prev i,
+.carousel-control-next i{
+	color: #fff;
+	font-size: 30px;
+}
+/* Collection Style */
+#collections{
+	padding: 60px 0;
+}
+.collection{
+	position: relative;
+}
+.collection .collect-tittle{
+	position: absolute;
+	bottom: 10%;
+}
+.collection img{
+	width: 100%;
+	height: 250px;
+}
+.collection .collect-tittle h2{
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	padding-left: 20px;
+	padding-bottom: 7px;
+	border-bottom: 1px solid #fff;
+}
+
+
+
+
+@media (max-width: 768px)
 {
 	.header-top{
 		flex-direction: column;
 		padding: 30px;
 	}
-	.navbar .navbar-nav  .nav-item{
-		display: block;
+	.header-top .header-left{
+		
+	}
+	.btn{
+		padding: 5px;
+	}
+	.header-top span{
+		font-size: 8px;
+	}
+	.logo{
+		margin: 10px 0;
+	}
+	.navbar .navbar-nav .nav-item.open ul{
+		position: relative;
+		width: 100%;
+		transition: 0s;
+	}
+	.navbar .navbar-nav .nav-item.open ul li{
+		width: 100%;
 		text-align: center;
 	}
-	.navbar .navbar-nav  ul li ul{
-		position: relative;
-	}
-	.navbar .navbar-nav  .nav-item ul li{
-		width: 100%;
-	}
-	.navbar .navbar-nav .nav-item ul {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    visibility: hidden;
 }
+@media (min-width: 768px ) and (max-width: 992px) {
+	.collection img{
+		height: 200px;
+	}
 }
