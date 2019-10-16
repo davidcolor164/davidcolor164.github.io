@@ -22,6 +22,11 @@ a:hover{
 ul{
 	list-style: none;
 }
+button{
+	background: none;
+    border: none;
+    outline: none;
+}
 .btn{
 	border: none;
 	border-radius: 0;
@@ -118,9 +123,6 @@ ul{
 .search{
 	border: 1px solid #888888;
 	padding: 0 10px;
-}
-.search i{
-	cursor: pointer;
 }
 /* style nav */
 .navbar .navbar-nav  .nav-item {
@@ -309,6 +311,26 @@ ul{
 	height: 400px;
 	width: 100%;
 }
+.product .product-img .tag-free{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #333;
+	padding: 5px 20px 5px 10px;
+	color: #fff;
+	clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+}
+.product .product-img .tag-new{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #9f9f9f;
+	padding: 5px 10px 5px 20px;
+	color: #fff;
+	clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+}
 .product .product-img .bg-addtoCart{
 	position: absolute;
 	top: 0;
@@ -339,15 +361,16 @@ ul{
 	width: 50%;
 	outline: none;
 }
-.subcribe .btn-subcribe{
+.btn-subcribe{
 	padding: 8px 15px;
 	background: #333;
 	color: #fff;
 	border: 1px solid #333;
+	border-radius: 0;
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.subcribe .btn-subcribe:hover{
+.btn-subcribe:hover{
 	background: #fff;
 	color: #333;
 }
@@ -389,7 +412,6 @@ ul{
 	font-size: 30px;
 	margin: 0 7px;
 }
-
 
 @media (max-width: 768px)
 {
@@ -459,5 +481,86 @@ ul{
 	}
 	.tabs-desc{
 		height: 860px;
+	}
+}
+/* -------------Shop HTML --------------*/
+.brand_shop img{
+	height: 300px;
+}
+.brand_shop{
+	position: relative;
+}
+.brand_shop-content{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.brand_shop-content h2{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.brand_shop-content a,.brand_shop-content span{
+	color: #e1e1e1;
+	font-size: 16px;
+}
+.brand_shop-content span{
+	margin: 0 10px;
+}
+.product-list h2{
+	color: #333;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.product-list-bar span{
+	color: #333;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 7px 15px;
+	border: 1px solid #333;
+	cursor: pointer;
+}
+.show-list span:last-child{
+	border: none;
+	cursor: initial;
+}
+.product-list-bar span i{
+	margin-right: 10px;
+}
+.short-by span i{
+	margin-left: 10px;
+	margin-right: 0px;
+}
+.page-redirect span{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 13px;
+	margin: 0 5px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+}
+.page-redirect span:hover,
+.page-redirect span.current{
+	background: #111;
+	color: #fff;
+}
+@media (max-width: 768px){
+	.brand_shop img{
+		height: 240px;
+	}
+	.product-list-bar span{
+		font-size: 11px;
+		padding: 5px 10px;
+		line-height: 30px;
 	}
 }
