@@ -16,7 +16,7 @@
 		<div class="container">
 			<div class="header-top d-flex justify-content-between align-items-center" >
 				<div class="header-left">
-				<a href="#"><i class="fas fa-sign-in-alt"></i>Register</a>
+					<a href="#"><i class="fas fa-sign-in-alt"></i>Register</a>
 					<a href="#">My account<i class="fas fa-chevron-down"></i></a>
 					<a href="cart.html"><i class="fas fa-cart-plus"></i>5 Items</a>
 				</div>
@@ -40,7 +40,7 @@
 						<li class="nav-item" >
 							<a href="#" class="nav-link">Shop<i class="fas fa-chevron-down"></i></a>
 							<ul>
-								<li ><a href="#">Home Page</a></li>
+								<li ><a href="shop.html">Home Page</a></li>
 								<li ><a href="#">Page 1</a></li>
 								<li ><a href="#">Page 2</a></li>
 							</ul>				
@@ -51,7 +51,7 @@
 						<li class="nav-item" >
 							<a href="#" class="nav-link">Pages<i class="fas fa-chevron-down"></i></a>
 							<ul>
-								<li ><a href="shop-single.html">Page 5</a></li>
+								<li ><a href="#">Page 5</a></li>
 								<li ><a href="#">Page 3</a></li>
 								<li ><a href="#">Page 4</a></li>
 							</ul>				
@@ -78,154 +78,118 @@
 			</div>
 		</div>
 	</section>
-	<section class="product-list pad">
+
+	<section id="cart-list" class="pad">
 		<div class="container">
-			<h2>Product List</h2>
-			<div class="product-list-bar d-flex justify-content-between flex-column flex-md-row">
-				<div class="show-list ">
-					<span><i class="fas fa-th-large"></i>Grid</span>
-					<span><i class="fas fa-list"></i>List</span>
-					<span>Showing 1 - 12 products of 250 result</span>
+			<h2>Shopping cart summary</h2>
+			<div class="cart-list">
+				<table class="table">
+					<thead class="thead-primary">
+					        <th>Image</th>					        
+					        <th>Product</th>
+					        <th>Price</th>
+					        <th>Quantity</th>
+					        <th>Total</th>
+					        <th>Remove</th>
+					      </tr>
+					</thead>
+					<tbody class="text-center">
+						<tr> 
+							<td><img src="images/product1.png"></td>
+							<td>Nike Shirt 1</td>
+							<td>$7.99</td>
+							<td>
+								<div class="d-flex justify-content-center ">
+									<div class="qty ">
+										<input type="button" name="" value="-" class="btn btn-qty">
+										<input type="button" name="" value="1" class="btn btn-qty">
+										<input type="button" name="" value="+" class="btn btn-qty">
+									</div>
+								</div>
+							</td>
+							<td>$7.99</td>
+							<td><i class="fas fa-times btn-remove"></i></td>
+						</tr>
+					</tbody><!-- end 1product -->
+					<tbody class="text-center">
+						<tr> 
+							<td><img src="images/product1.png"></td>
+							<td>Nike Shirt 1</td>
+							<td>$7.99</td>
+							<td>
+								<div class="d-flex justify-content-center ">
+									<div class="qty ">
+										<input type="button" name="" value="-" class="btn btn-qty">
+										<input type="button" name="" value="1" class="btn btn-qty">
+										<input type="button" name="" value="+" class="btn btn-qty">
+									</div>
+								</div>
+							</td>
+							<td>$7.99</td>
+							<td><i class="fas fa-times btn-remove"></i></td>
+						</tr>
+					</tbody><!-- end 1product -->
+					<tbody class="text-center">
+						<tr> 
+							<td><img src="images/product1.png"></td>
+							<td>Nike Shirt 1</td>
+							<td>$7.99</td>
+							<td>
+								<div class="d-flex justify-content-center ">
+									<div class="qty ">
+										<input type="button" name="" value="-" class="btn btn-qty">
+										<input type="button" name="" value="1" class="btn btn-qty">
+										<input type="button" name="" value="+" class="btn btn-qty">
+									</div>
+								</div>
+							</td>
+							<td>$7.99</td>
+							<td><i class="fas fa-times btn-remove"></i></td>
+						</tr>
+					</tbody><!-- end 1product -->
+				</table>
+			</div> 
+			<div class="row d-flex justify-content-between my-5">
+				<div class="col-md-6">
+					<button class="update-cart btn btn-addtoCart">Update Cart<i class="fas fa-long-arrow-alt-right"></i></button>
+					<a href="" class="btn btn-shop">Continue Shopping<i class="fas fa-long-arrow-alt-right"></i></a>
 				</div>
-				<div class="short-by">
-					<span>Short By<i class="fas fa-angle-down"></i></span>
+				<div class="coupon d-flex col-md-6 my-3 my-md-0 justify-content-end">
+					<h3>Coupon Code</h3>
+					<div class="form-coupon d-flex ">
+						<input type="text" class="btn" name="" placeholder="Enter your coupon...">
+						<button type="summit" class="btn btn-addtoCart text-center apply-coupon" name="">Apply coupon</button>
+					</div>
 				</div>
 			</div>
-			
-			<div class="row pad">
-				<div class="col-6 col-md-4">
-					<div class="product">
-						<div class="product-img">
-							<img src="images/product1.png">
-							<div class="tag-free">Free</div>
-							<div class="tag-new">New</div>
-							<div class="bg-addtoCart">
-								<a href="#" class="btn btn-addtoCart">Add to cart</a>
-							</div>
-						</div>										
-						<div class="product-content text-center">
-							<h4 class="product-name">Nike 1 Shirt</h4>
-							<p class="product-desc">Men</p>
-							<div class="price">
-								<span class="price-prev">$75.99</span>
-								<span class="price-sale">$75.99</span>
-							</div>
-						</div>
-					</div>
-				</div><!-- end product#1 -->
-				<div class="col-6 col-md-4">
-					<div class="product">
-						<div class="product-img">
-							<img src="images/product2.png">
-							<div class="bg-addtoCart">
-								<a href="#" class="btn btn-addtoCart">Add to cart</a>
-							</div>
-						</div>										
-						<div class="product-content text-center">
-							<h4 class="product-name">Nike 1 Shirt</h4>
-							<p class="product-desc">Men</p>
-							<div class="price">
-								<span class="price-sale">$75.99</span>
-							</div>
-						</div>
-					</div>
-				</div><!-- end product#2 -->
-				<div class="col-6 col-md-4">
-					<div class="product">
-						<div class="product-img">
-							<img src="images/product3.png">
-							<div class="tag-new">New</div>
-							<div class="bg-addtoCart">
-								<a href="#" class="btn btn-addtoCart">Add to cart</a>
-							</div>
-						</div>										
-						<div class="product-content text-center">
-							<h4 class="product-name">Nike 1 Shirt</h4>
-							<div class="star">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
-							</div>
-							<p class="product-desc">Men</p>
-							<div class="price">
-								<span class="price-prev">$75.99</span>
-								<span class="price-sale">$75.99</span>
-							</div>
-						</div>
-					</div>
-				</div><!-- end product#3 -->
-				<div class="col-6 col-md-4">
-					<div class="product">
-						<div class="product-img">
-							<img src="images/product4.png">
-							<div class="tag-free">Free</div>
-							<div class="bg-addtoCart">
-								<a href="#" class="btn btn-addtoCart">Add to cart</a>
-							</div>
-						</div>										
-						<div class="product-content text-center">
-							<h4 class="product-name">Nike 1 Shirt</h4>
-							<p class="product-desc">Men</p>
-							<div class="price">
-								<span class="price-sale">$75.99</span>
-							</div>
-						</div>
-					</div>
-				</div><!-- end product#4 -->
-				<div class="col-6 col-md-4">
-					<div class="product">
-						<div class="product-img">
-							<img src="images/product5.png">
-							<div class="tag-new">New</div>
-							<div class="tag-free">Free</div>
-							<div class="bg-addtoCart">
-								<a href="#" class="btn btn-addtoCart">Add to cart</a>
-							</div>
-						</div>										
-						<div class="product-content text-center">
-							<h4 class="product-name">Nike 1 Shirt</h4>
-							<p class="product-desc">Men</p>
-							<div class="price">
-								<span class="price-prev">$75.99</span>
-								<span class="price-sale">$75.99</span>
-							</div>
-						</div>
-					</div>
-				</div><!-- end product#5 -->
-				<div class="col-6 col-md-4 ">
-					<div class="product">
-						<div class="product-img">
-							<img src="images/product6.png">
-							<div class="tag-new">New</div>
-							<div class="bg-stock">
-								<span>Out of stock</span>
-							</div>
-						</div>										
-						<div class="product-content text-center">
-							<h4 class="product-name">Nike 1 Shirt</h4>
-							<p class="product-desc">Men</p>
-							<div class="price">
-								<span class="price-sale">$75.99</span>
-							</div>
-						</div>
-					</div>
-				</div><!-- end product#6 -->
-			</div>
-			<div class="page-redirect text-center">
-				<span class="current">1</span>
-				<span>2</span>
-				<span>3</span>
-				<span class="fas fa-arrow-right"></span>
+			<div class="row">
+				<div class="col-md-7"></div>
+				<div class="col-md-5 mb-3 text-center">
+					<div class="cart-total mb-3 d-flex flex-column justify-content-end">
+    					<h3>Cart Totals</h3>
+    					<p class="d-flex justify-content-between">
+    						<span>Subtotal</span>
+    						<span>$20.60</span>
+    					</p>
+    					<p class="d-flex justify-content-between">
+    						<span>Delivery</span>
+    						<span>$0.00</span>
+    					</p>
+    					<p class="d-flex justify-content-between">
+    						<span>Discount</span>
+    						<span>$3.00</span>
+    					</p>
+    					<hr>
+    					<p class="d-flex total-price justify-content-between">
+    						<span>Total</span>
+    						<span>$17.60</span>
+    					</p>
+    				</div>
+    				<a href="checkout.html" class="btn btn-viewall">Proceed to Checkout</a>
+				</div>
 			</div>
 		</div>
 	</section>
-
-
-
-
-
 
 
 

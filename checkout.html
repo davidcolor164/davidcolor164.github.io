@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> WNstore Website </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script type="text/javascript" src="bootstrap/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/popper.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" href="fonts/css/all.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body >
+	<header>
+		<div class="container">
+			<div class="header-top d-flex justify-content-between align-items-center" >
+				<div class="header-left">
+					<a href="#"><i class="fas fa-sign-in-alt"></i>Register</a>
+					<a href="#">My account<i class="fas fa-chevron-down"></i></a>
+					<a href="cart.html"><i class="fas fa-cart-plus"></i>5 Items</a>
+				</div>
+				<a href="#" class="logo"><img src="images/logo.png"></a>
+				<div class="header-right d-flex align-items-center">
+					<span class="lang">EN<i class="fas fa-chevron-down"></i></span>					
+					<div class="search">
+						<input type="text" name="" class="btn btn-search" placeholder="Search..."><button  type="search" ><i class="fas fa-search"></i></button>
+					</div>		
+				</div>
+			</div><!-- End header-top -->
+			<nav class="navbar navbar-expand-md navbar-light bg-light navbar-custom">
+				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" >
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav  m-auto text-center text-md-left">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">Home</a>							
+						</li>
+						<li class="nav-item" >
+							<a href="#" class="nav-link">Shop<i class="fas fa-chevron-down"></i></a>
+							<ul>
+								<li ><a href="shop.html">Home Page</a></li>
+								<li ><a href="#">Page 1</a></li>
+								<li ><a href="#">Page 2</a></li>
+							</ul>				
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Portfolio</a>					
+						</li>
+						<li class="nav-item" >
+							<a href="#" class="nav-link">Pages<i class="fas fa-chevron-down"></i></a>
+							<ul>
+								<li ><a href="#">Page 5</a></li>
+								<li ><a href="#">Page 3</a></li>
+								<li ><a href="#">Page 4</a></li>
+							</ul>				
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Blog</a>						
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Contact</a>					
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<section class="brand_shop">
+		<img src="images/brand-shop.jpg">
+		<div class="brand_shop-content">
+			<h2>Shop</h2>
+			<div class="link-duongdan">
+				<a href="#">Home</a>
+				<span>/</span>
+				<a href="#">Shop</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="checkout" class="pad">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="bill-address">
+						<h3>billing address</h3>
+						<div class="row">
+							<div class="col-12">
+								<div class="form-group">
+				            		<label for="country">State / Country *</label>
+				            		<div class="select-wrap">
+				                  		<select name="" id="" class="form-control">
+					                  		<option value="">France</option>
+					                  	 	<option value="">Italy</option>
+					                  	 	<option value="">Philippines</option>
+					                   		<option value="">South Korea</option>
+					                   		<option value="">Hongkong</option>
+					                   		<option value="">Japan</option>
+				                  		</select>
+				                	</div>
+			            		</div>
+							</div>
+							<div class="col-md-6">
+								 <div class="form-group">
+				                	<label for="firstname" >Firt Name *</label>
+				                  	<input type="text" class="form-control" placeholder="" >
+				                </div>
+							</div>
+							<div class="col-md-6">
+								 <div class="form-group">
+				                	<label for="firstname">Last Name *</label>
+				                  	<input type="text" class="form-control" placeholder="">
+				                </div>
+							</div>
+							<div class="col-12">
+								 <div class="form-group">
+				                	<label for="firstname">Office / Home / Others</label>
+				                  	<input type="text" class="form-control" placeholder="">
+				                </div>
+							</div>
+							<div class="col-12">
+								 <div class="form-group">
+				                	<label for="firstname">Address 1 * </label>
+				                  	<input type="text" class="form-control" placeholder="">
+				                </div>
+							</div>
+							<div class="col-12">
+								 <div class="form-group">
+				                	<label for="firstname">Adress (Optional)</label>
+				                  	<input type="text" class="form-control" placeholder="">
+				                </div>
+							</div>
+							<div class="col-12">
+								 <div class="form-group">
+				                	<label for="firstname">Town / City *</label>
+				                  	<input type="text" class="form-control" placeholder="">
+				                </div>
+							</div>
+							<div class="col-md-6">
+								 <div class="form-group">
+				                	<label for="firstname">State / Country *</label>
+				                  	<input type="text" class="form-control" placeholder="" >
+				                </div>
+							</div>
+							<div class="col-md-6">
+								 <div class="form-group">
+				                	<label for="firstname">Pincode / Zip *</label>
+				                  	<input type="text" class="form-control" placeholder="">
+				                </div>
+							</div>
+							<div class="col-md-6">
+								 <div class="form-group">
+				                	<label for="firstname">Address *</label>
+				                  	<input type="text" class="form-control" placeholder="" >
+				                </div>
+							</div>
+							<div class="col-md-6">
+								 <div class="form-group">
+				                	<label for="firstname">Phone Number *</label>
+				                  	<input type="text" class="form-control" placeholder="">
+				                </div>
+							</div>
+							<div class="col-md-12">
+			                	<div class="form-group mt-4">
+									<div class="checkbox">
+									  <label class="mr-3"><input type="checkbox" name="optradio"> Create an Account? or Sign in with <a href="#"><i class="fab fa-facebook-square mr-2"></i></a><a href="#"><i class="fab fa-google-plus-square "></i></a></label>
+									</div>
+								</div>
+			                </div>
+						</div>
+						<h3>Ship to alternative address? <input  type="checkbox" name=""></h3>
+						<div class="row">
+							<div class="col-12"></div>
+							<textarea  rows="5"  class="w-100" placeholder="OTHER NOTE..." ></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<h3>Your order</h3>
+					<div class="cart-detail cart-total bg-light p-3 p-md-4">
+						<h4 class="d-flex">
+							<span>Product</span>
+							<span>Total</span>
+						</h4>
+	          			<p class="d-flex">
+							<span>Nike 1 Shirt</span>
+							<span>$20.60</span>
+						</p>
+						<p class="d-flex">
+							<span>Nike 1 Shirt</span>
+							<span>$0.00</span>
+						</p>
+						<p class="d-flex">
+							<span>Nike 1 Shirt</span>
+							<span>$3.00</span>
+						</p>
+						<p class="d-flex ">
+							<b>Sub Total</b>
+							<b>$17.60</b>
+						</p>
+						<p class="d-flex ">
+							<b>Shipping</b>
+							<b>Free Shipping</b>
+						</p>
+						<hr>
+						<h4 class="d-flex total-price">
+							<span>Total Order</span>
+							<span>$63.00</span>
+						</h4>
+					</div>
+					<div class="radio-payment pad">
+						<div class="form-group">
+							<div class="col-md-12">
+								<div class="radio">
+								   <label><input type="radio" name="optradio" class="mr-2"> Direct Bank Tranfer</label>
+								   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam recusandae dolores molestias eos commodi deserunt distinctio voluptas! Quibusdam accusamus, provident! Obcaecati deleniti ut quam iste autem recusandae corporis iure dignissimos!</p>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-12">
+								<div class="radio d-flex">
+								   <label><input type="radio" name="optradio" class="mr-2"> Paypal</label>
+								   <div class="payment-icons my-3">
+										<i class="fab fa-cc-visa"></i>
+										<i class="fab fa-cc-mastercard"></i>
+										<i class="fab fa-cc-paypal"></i>
+										<i class="fab fa-cc-discover"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-center">
+							<a href="#" class="btn btn-addtoCart">Place your order</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+<footer class="footer pad">
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-4 text-left mb-3 mb-md-0 order-1 ">
+					<h3 class="mb-5 text-center text-md-left">Quick Links</h3>
+					<div class="quick-link d-flex justify-content-around justify-content-md-start">
+						<div class="d-flex flex-column" >
+							<a href="#">About Us</a>
+							<a href="#">Brands</a>
+							<a href="#">Portilio</a>
+							<a href="#">Support</a>
+							<a href="#">Contact Us</a>
+							<a href="#">Order History</a>
+							<a href="#">Site Map</a>
+						</div>
+						<div class="d-flex flex-column ml-md-5">
+							<a href="#">My Account</a>
+							<a href="#">Customer Service</a>
+							<a href="#">My Vouchers</a>
+							<a href="#">Search Terms</a>
+							<a href="#">Terms & Conditions</a>
+							<a href="#">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center mb-3 mb-md-0 order-3 order-md-2">
+					<a href="#" class="logo-footer "><img src="images/logo-footer.png"></a>
+					<div class="social-icons my-3">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-google"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</div>
+					<div class="payment-icons my-3">
+						<i class="fab fa-cc-visa"></i>
+						<i class="fab fa-cc-mastercard"></i>
+						<i class="fab fa-cc-paypal"></i>
+						<i class="fab fa-cc-discover"></i>
+					</div>
+					<strong>Copyright &copy; 2019 WNstore. All Rights Reserved</strong>
+				</div>
+				<div class="col-md-4 text-center mb-3 mb-md-0 order-2">
+					<h3 class="mb-5 text-md-right">Location</h3>
+					<iframe class="w-100 mb-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2082879400214!2d106.68782401384097!3d10.795353292308695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528ce768ce9c1%3A0x1150e7768168f39b!2zMjA5IEhvw6BuZyBTYSwgVMOibiDEkOG7i25oLCBRdeG6rW4gMSwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1571214108307!5m2!1sen!2s"  height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					<address class="text-md-right">209 Hoàng Sa, Tân Định, Quận 1, Hồ Chí Minh</address>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+

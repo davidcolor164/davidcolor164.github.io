@@ -15,4 +15,12 @@
 		$('ul.tabs-content li .products').removeClass('show-products');
 		$('ul.tabs-content li:nth-child(' + chiso + ") .products").addClass('show-products');
 	});
+
+
+	/*change img at shop-single*/
+	$('.img-detail-small img').on('click', function(event) {
+		console.log('sdfasdf');
+		$('.img-detail-big').attr('src', $(this).attr('src')); 
+		return false;
+	});
 });
